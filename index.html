@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+    <meta name="description" content="Jean Marco Carnevali | WDD 231 Web Frontend Development I | Home Page">
+    <meta name="author" content="Jean Marco Carnevali">
+    <title>WDD 231 - Home Page - Jean Marco Carnevali</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
-    <h1>WDD 231 - Jean Marco Carnevali</h1>
+    <header>
+        <img src="images/house.svg" alt="Site Logo" width="512" height="512">
+        <span>Jean Marco's Site</span>
+        <button id="menu" class="hamburger" aria-label="Toggle menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#" aria-current="page">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>My name is Jean Marco Carnevali Rodriguez. I'm 17 years old. I'm from Caracas, Venezuela, and I'm living in Bogotá, Colombia with my family. I like anything related to technology and soccer. My goal is to earn a bachelor's degree in software development and go on a mission. I like to travel, go on outings with my family, i like spending time with them, and I really like to learn new things.</p>
+            <p></p>
+        </section>
+
+        <section class="profile">
+            <h2>Student Photo</h2>
+            <img src="images/profile.jpg" alt="Jean Marco Carnevali" width="170" height="185" loading="lazy">
+        </section>
+
+        <section class="certificate">
+            <h2>Web Certificate Courses</h2>
+            <div>
+                <button type="button" id="all">All</button>
+                <button type="button" id="wdd">WDD</button>
+                <button type="button" id="cse">CSE</button>
+
+                <div id="course-card" class="course-grid"></div>
+                <p class="credits">The total credits for course listed above is <span id="total-credits">0</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/jean-m-carnevali/wdd231" target="_blank"><img src="images/github.svg" alt="Github Profile" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/jean-marco-carnevali-rodriguez-9670193b9/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin Profile" width="16" height="16"></a>
+            <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="images/instagram.svg" alt="Instagram Profile" width="16" height="16"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt="Youtube Channel" width="16" height="16"></a>
+        </div>
+        <p>©<span id="currentyear"></span> | Jean Marco Carnevali | Bogotá, Colombia</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
