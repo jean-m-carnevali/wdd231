@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jean Marco Carnevali | WDD 231 Web Frontend Development I | Bogotá Chamber of Commerce">
+    <meta name="author" content="Jean Marco Carnevali">
+    <title>WDD 231 - Bogotá Chamber of Commerce - Jean Marco Carnevali</title>
+    <meta property="og:title" content="Bogotá Chamber of Commerce - WDD 231 - Jean Marco Carnevali">
+    <meta property="og:description" content="Find local businesses of the Bogotá Chamber of Commerce">
+    <meta property="og:image" content="https://jean-m-carnevali.github.io/wdd231/images/profile.jpg">
+    <meta property="og:url" content="https://jean-m-carnevali.github.io/wdd231/chamber/directory.html">
+
+    <link rel="icon" href="../favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/house.svg" alt="Site Logo" width="512" height="512">
+        <span>Bogotá Chamber of Commerce</span>
+        <button id="menu" class="hamburger" aria-label="Toggle menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="current"><a href="#" aria-current="page">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+    <main id="main-content" class="page-container">
+        <h1>Directory</h1>
+        <div class="view-buttons">
+            <button id="grid-button">Grid</button>
+            <button id="list-button">List</button>
+        </div>
+        <div id="cards" class="grid"></div>
+    </main>
+    <footer>
+        <div class="footer-contact">
+            <h2>Bogotá Chamber of Commerce</h2>
+            <p>Bogotá, Colombia</p>
+            <p>contact@example.com</p>
+            <p>+57 123 4567891</p>
+        </div>
+        <div class="social">
+            <a href="https://github.com/jean-m-carnevali/wdd231" target="_blank"><img src="images/github.svg" alt="Github Profile" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/jean-marco-carnevali-rodriguez-9670193b9/" target="_blank"><img src="images/linkedin.svg" alt="Linkedin Profile" width="16" height="16"></a>
+            <a href="https://www.instagram.com/?hl=es" target="_blank"><img src="images/instagram.svg" alt="Instagram Profile" width="16" height="16"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="images/youtube.svg" alt="Youtube Channel" width="16" height="16"></a>
+        </div>
+        <div class="footer-info">
+            <p>WDD 231 Chamber Project</p>
+            <p>Jean Marco Carnevali</p>
+            <p>©<span id="currentyear"></span> Bogotá Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

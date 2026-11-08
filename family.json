@@ -1,0 +1,33 @@
+{
+    "familyName": "Carnevali",
+    "moveInDate": "2016-02-16",
+    "numberOfPeople": 5,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "Jean Carnevali",
+            "gender": "Male",
+            "birthdate": "1982-02-25"
+        },
+        {
+            "name": "Jenn Carnevali",
+            "gender": "Female",
+            "birthdate": "1985-09-10"
+        },
+        {
+            "name": "Jean Carnevali",
+            "gender": "Male",
+            "birthdate": "2008-12-18"
+        },
+        {
+            "name": "Jean Carnevali",
+            "gender": "Male",
+            "birthdate": "2009-12-09"
+        },
+        {
+            "name": "Paula Carnevali",
+            "gender": "Female",
+            "birthdate": "2012-09-01"
+        }
+    ]
+}

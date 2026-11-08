@@ -1,0 +1,298 @@
+* {
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr) 44px;
+  padding: 5px 0 5px 10px;
+  align-items: end;
+  border-bottom: solid 1px #ddd;
+  column-gap: 8px;
+}
+
+header img {
+  display: block;
+  margin-top: 10px;
+  width: 35px;
+  height: auto;
+  padding-bottom: 5px;
+}
+
+header span {
+  font-size: 1.5rem;
+  color: #3D405B;
+  padding-bottom: 4px;
+  font-weight: bold;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #3D405B;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+
+.hamburger::before {
+  content: "\2630";
+}
+
+.hamburger.show::before {
+  content: "\00D7";
+}
+
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  padding: .8rem 10px;
+  color: #3D405B;
+  text-decoration: none;
+  border-bottom: solid 1px #ddd;
+}
+
+.navigation li.current {
+  background-color: #eee;
+}
+
+.navigation a:hover {
+  background-color: #9fb7ff;
+}
+
+h1 {
+  margin: 1rem 10px;
+  color: #3D405B;
+}
+
+footer {
+  background-color: #eee;
+  padding: 20px;
+  text-align: center;
+  color: #3D405B;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.footer-contact h2 {
+  font-size: 1rem;
+  margin-top: 0;
+}
+
+.footer-contact p, .footer-info p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 8px;
+}
+
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border:  #ccc solid 1px;
+  border-radius: 10px;
+}
+
+.social img {
+  width: 22px;
+  height: 22px;
+}
+
+.social a:hover {
+  background-color: #ddd;
+}
+
+main {
+  padding: 10px;
+}
+
+.view-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.view-buttons button {
+  width: 80px;
+  padding: 6px 12px;
+  background-color: #eee;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  color: #3D405B;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#cards {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+#cards.grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 20px;
+}
+
+.business-card {
+  background-color: #ebebeb;
+  border-radius: 10px;
+  overflow: hidden;
+  min-width: 0;
+}
+
+.business-info {
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid #d1d0d0;
+}
+
+.business-info h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #3D405B;
+}
+
+.business-info p {
+  margin: 2px 0 0;
+  font-size: 0.8rem;
+}
+
+.card-info {
+  display: grid;
+  grid-template-columns: 80px minmax(0, 1fr);
+  padding: 12px;
+  gap: 12px;
+  align-items: center;
+}
+
+.card-info img {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+  border-radius: 7px;
+}
+
+.card-details {
+  min-width: 0;
+}
+
+.card-details p {
+  margin: 0 0 8px;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.view-buttons button.active {
+  background-color: #3D405B;
+  color: #fff;
+}
+
+.view-buttons button:hover {
+  background-color: #60648a;
+  color: #fff;
+}
+
+#cards.list {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+}
+
+#cards.list .business-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 4px;
+  padding: 10px 12px;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: #fff;
+}
+
+#cards.list .business-card:nth-child(odd) {
+  background-color: #60648a;
+  color: #fff;
+}
+
+#cards.list .business-card:nth-child(even) {
+  background-color: #eeeeee;
+}
+
+#cards.list .business-card:nth-child(odd) .business-info h2 {
+  color: #fff;
+}
+
+#cards.list .business-info, #cards.list .card-info, #cards.list .business-email {
+  display: contents;
+}
+
+#cards.list .business-info p, #cards.list .card-info img, #cards.list .business-email {
+  display: none;
+}
+
+#cards.list .business-info h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  color: #3D405B;
+}
+
+#cards.list .business-address, #cards.list .business-phone, #cards.list .business-website {
+  display: block;
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.membership {
+  display: inline-block;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 0.75rem;
+}
+
+.membership-1 {
+  background-color: #b5d6ab;
+  color: #182015;
+}
+
+.membership-2 {
+  background-color: #f8f8f8;
+  color: #3D405B;
+}
+
+.membership-3 {
+  background-color: #d1ba37;
+  color: #050505;
+}

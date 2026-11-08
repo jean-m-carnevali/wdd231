@@ -1,0 +1,96 @@
+@media only screen and (min-width: 52rem) {
+
+    header, main, nav {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 40px minmax(0, 1fr) auto;
+    }
+
+    header span {
+        font-size: 1.4rem;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    
+    .navigation {
+        display: block;
+        grid-column: 3;
+        grid-row: 1;
+        border-bottom: solid 1px #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    footer {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: start;
+        gap: 70px;
+        padding: 25px 20px;
+        background-color: #eee;
+        align-items: start;
+    }
+
+    .footer-contact {
+        text-align: end;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .footer-info {
+        justify-self: left;
+        text-align: left;
+    }
+
+    #cards.grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .business-card {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    #cards.grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    #cards.list .business-card {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+        align-items: start;
+    }
+
+        #cards.list .business-card {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr 0.9fr 1.5fr;
+        gap: 15px;
+        align-items: center;
+        padding: 18px 12px;
+    }
+
+    #cards.list .business-info,
+    #cards.list .card-info,
+    #cards.list .card-details {
+        display: contents;
+    }
+
+}

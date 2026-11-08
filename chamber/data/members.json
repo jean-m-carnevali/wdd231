@@ -1,0 +1,93 @@
+
+[
+    {
+        "name": "Nube Digital",
+        "tagline": "Innovative Technology Solutions",
+        "address": "Carrera 15 #93-40, Bogotá",
+        "phone": "601-555-1002",
+        "email": "info@nubedigital.example",
+        "website": "https://example.com",
+        "image": "nube-digital.webp",
+        "membership": 2
+    },
+    {
+        "name": "Raíz Verde",
+        "tagline": "Bringing Nature to Your Home",
+        "address": "Calle 100 #19-20, Bogotá",
+        "phone": "601-555-1003",
+        "email": "info@raizverde.example",
+        "website": "https://example.com",
+        "image": "raiz-verde.webp",
+        "membership": 1
+    },
+    {
+        "name": "Vértice Fitness",
+        "tagline": "Build Strength, Live Better",
+        "address": "Carrera 7 #72-15, Bogotá",
+        "phone": "601-555-1004",
+        "email": "info@verticefitness.example",
+        "website": "https://example.com",
+        "image": "vertice-fitness.webp",
+        "membership": 3
+    },
+        {
+        "name": "Café Sabana",
+        "tagline": "The Best Colombian Coffee",
+        "address": "Calle 85 #12-50, Bogotá",
+        "phone": "601-555-1001",
+        "email": "info@cafesabana.example",
+        "website": "https://example.com",
+        "image": "cafe-sabana.webp",
+        "membership": 3
+    },
+    {
+        "name": "Mercado Laurel",
+        "tagline": "Fresh Food, Local Products",
+        "address": "Calle 53 #24-10, Bogotá",
+        "phone": "601-555-1005",
+        "email": "info@mercadolaurel.example",
+        "website": "https://example.com",
+        "image": "mercado-laurel.webp",
+        "membership": 2
+    },
+    {
+        "name": "Estudio Prisma",
+        "tagline": "Creative Design and Branding",
+        "address": "Carrera 11 #82-30, Bogotá",
+        "phone": "601-555-1006",
+        "email": "info@estudioprisma.example",
+        "website": "https://example.com",
+        "image": "estudio-prisma.webp",
+        "membership": 1
+    },
+    {
+        "name": "Andes Travel",
+        "tagline": "Discover Your Next Adventure",
+        "address": "Calle 26 #68-70, Bogotá",
+        "phone": "601-555-1007",
+        "email": "info@andestravel.example",
+        "website": "https://example.com",
+        "image": "andes-travel.webp",
+        "membership": 3
+    },
+    {
+        "name": "Mundo Mascota",
+        "tagline": "Everything Your Pets Need",
+        "address": "Carrera 19 #106-25, Bogotá",
+        "phone": "601-555-1008",
+        "email": "info@mundomascota.example",
+        "website": "https://example.com",
+        "image": "mundo-mascota.webp",
+        "membership": 2
+    },
+    {
+        "name": "Luz de Barrio",
+        "tagline": "Handmade Gifts and Home Decor",
+        "address": "Calle 45 #18-35, Bogotá",
+        "phone": "601-555-1009",
+        "email": "info@luzdebarrio.example",
+        "website": "https://example.com",
+        "image": "luz-de-barrio.webp",
+        "membership": 1
+    }
+]
