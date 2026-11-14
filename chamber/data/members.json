@@ -6,7 +6,7 @@
         "address": "Carrera 15 #93-40, Bogotá",
         "phone": "601-555-1002",
         "email": "info@nubedigital.example",
-        "website": "https://example.com",
+        "website": "https://nubedigital.com",
         "image": "nube-digital.webp",
         "membership": 2
     },
@@ -16,7 +16,7 @@
         "address": "Calle 100 #19-20, Bogotá",
         "phone": "601-555-1003",
         "email": "info@raizverde.example",
-        "website": "https://example.com",
+        "website": "https://raizverde.com",
         "image": "raiz-verde.webp",
         "membership": 1
     },
@@ -26,7 +26,7 @@
         "address": "Carrera 7 #72-15, Bogotá",
         "phone": "601-555-1004",
         "email": "info@verticefitness.example",
-        "website": "https://example.com",
+        "website": "https://verticefitness.com",
         "image": "vertice-fitness.webp",
         "membership": 3
     },
@@ -36,7 +36,7 @@
         "address": "Calle 85 #12-50, Bogotá",
         "phone": "601-555-1001",
         "email": "info@cafesabana.example",
-        "website": "https://example.com",
+        "website": "https://cafesabana.com",
         "image": "cafe-sabana.webp",
         "membership": 3
     },
@@ -46,7 +46,7 @@
         "address": "Calle 53 #24-10, Bogotá",
         "phone": "601-555-1005",
         "email": "info@mercadolaurel.example",
-        "website": "https://example.com",
+        "website": "https://mercadolaurel.com",
         "image": "mercado-laurel.webp",
         "membership": 2
     },
@@ -56,7 +56,7 @@
         "address": "Carrera 11 #82-30, Bogotá",
         "phone": "601-555-1006",
         "email": "info@estudioprisma.example",
-        "website": "https://example.com",
+        "website": "https://estudioprisma.com",
         "image": "estudio-prisma.webp",
         "membership": 1
     },
@@ -66,7 +66,7 @@
         "address": "Calle 26 #68-70, Bogotá",
         "phone": "601-555-1007",
         "email": "info@andestravel.example",
-        "website": "https://example.com",
+        "website": "https://andestravel.com",
         "image": "andes-travel.webp",
         "membership": 3
     },
@@ -76,7 +76,7 @@
         "address": "Carrera 19 #106-25, Bogotá",
         "phone": "601-555-1008",
         "email": "info@mundomascota.example",
-        "website": "https://example.com",
+        "website": "https://mundomascota.com",
         "image": "mundo-mascota.webp",
         "membership": 2
     },
@@ -86,7 +86,7 @@
         "address": "Calle 45 #18-35, Bogotá",
         "phone": "601-555-1009",
         "email": "info@luzdebarrio.example",
-        "website": "https://example.com",
+        "website": "https://luzdebarrio.com",
         "image": "luz-de-barrio.webp",
         "membership": 1
     }

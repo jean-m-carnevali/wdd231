@@ -93,4 +93,34 @@
         display: contents;
     }
 
+    .chamber-home {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .hero img {
+        height: 400px;
+    }
+
+    .hero-content {
+        padding: 3rem 2rem 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .info {
+        grid-template-columns: 1.5fr 1fr;
+        gap: 20px;
+    }
+
+    .spotlights-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
 }
