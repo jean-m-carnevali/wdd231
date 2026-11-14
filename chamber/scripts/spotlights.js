@@ -37,7 +37,7 @@ function displaySpotlights(data) {
         const image = document.createElement("img");
         const address = document.createElement("p");
         const phone = document.createElement("p");
-        const website = document.createElement("a");
+        const website = document.createElement("p");
         const membership = document.createElement("span");
 
         card.classList.add("business-card");
