@@ -9,7 +9,7 @@
     <meta property="og:title" content="Bogotá Chamber of Commerce | Join">
     <meta property="og:description" content="Join us at the Bogotá Chamber of Commerce">
     <meta property="og:image" content="https://jean-m-carnevali.github.io/wdd231/images/profile.jpg">
-    <meta property="og:url" content="https://jean-m-carnevali.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://jean-m-carnevali.github.io/wdd231/chamber/join.html">
 
     <link rel="icon" href="../cc-bogota.ico">
 
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
 
-    <script src="scripts/index.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/dates.js" defer></script>
 </head>
@@ -33,51 +33,124 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li ><a href="index.html" aria-current="page">Home</a></li>
+            <li ><a href="index.html">Home</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li class="current"><a href="join.html" aria-current="page">Join</a></li>
             <li><a href="discover.html">Discover</a></li>
         </ul>
     </nav>
-    <main id="main-content" class="chamber-home">
+    <main class="join-page">
+        <h1>Join Us</h1>
+        <section class="application-form">
+            <h2>Membership Application Form</h2>
 
-        <h1>Join</h1>
+            <form method="get" action="thankyou.html">
+                
 
-        <form method="get" action="thankyou.html">
+                <label for="firstname">First name
+                    <input type="text" id="firstname" name="firstname" title="Enter your first name" autocomplete="given-name" required>
+                </label>
+            
+                <label for="lastname">Last name
+                    <input type="text" id="lastname" name="lastname" title="Enter your last name" autocomplete="family-name" required>
+                </label>
+            
+                <label for="orgtitle">Organizational Title
+                    <input type="text" id="orgtitle" name="orgtitle" title="Enter your organization title (at least 7 letters)" autocomplete="organization-title" pattern="[A-Za-z \-]{7,}">
+                </label>
 
-            <label for="firstname">First name</label>
-            <input type="text" name="firstname" autocomplete="given-name" required>
+                <label for="email">Email
+                    <input type="email" id="email" name="email" title="Enter your email" autocomplete="email" placeholder="example@gmail.com" required>
+                </label>
+            
+                <label for="phone">Mobile Phone
+                    <input type="tel" id="phone" name="phone" title="Enter your mobile phone" autocomplete="tel" required>
+                </label>
+            
+                <label for="business">Business Name
+                    <input type="text" id="business" name="business" title="Enter your business name" autocomplete="organization" required>
+                </label>
 
-            <label for="firstname">Last name</label>
-            <input type="text" name="lastname" autocomplete="family-name" required>
+                <label for="membership">Membership Level
+                    <select id="membership" name="membership" title="Select your membership level" required>
+                        <option value="" disabled selected>Select a membership</option>
+                        <option value="Non Profit">NP Membership</option>
+                        <option value="Bronze">Bronze Membership</option>
+                        <option value="Silver">Silver Membership</option>
+                        <option value="Gold">Gold Membership</option>
+                    </select>
+                </label>
+                <label for="description">Business Description
+                    <textarea id="description" name="description" title="Describe your business" rows="5"></textarea>
+                </label>
 
-            <label for="org-title">Organizational Title</label>
-            <input type="text" name="orgtitle" title="Enter your organization title (at least 7 letters)" autocomplete="organization-title" required>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" class="submit" value="Submit">
+            </form>
+        </section>
+        
+        <div class="membership-levels">
+            <h2>Membership Levels</h2>
+            <div class="np-membership-card">
+                <h3>Non Profit Membership Level</h3>
+                <a href="#npmodal" class="membership-modal">Learn More</a>
+            </div>
+            <div class="bz-membership-card">
+                <h3>Bronze Membership Level</h3>
+                <a href="#bronzemodal" class="membership-modal">Learn More</a>
+            </div>
+            <div class="sv-membership-card">
+                <h3>Silver Membership Level</h3>
+                <a href="#silvermodal" class="membership-modal">Learn More</a>
+            </div>
+            <div class="gd-membership-card">
+                <h3>Gold Membership Level</h3>
+                <a href="#goldmodal" class="membership-modal">Learn More</a>
+            </div>
+        </div>
 
-            <label for="email">Email</label>
-            <input type="email" name="email" title="Enter your email" autocomplete="email" placeholder="example@gmail.com" required>
-
-            <label for="telephone">Mobile Phone</label>
-            <input type="tel" name="phone" title="Enter your mobile phone" autocomplete="tel" required>
-
-            <label for="business">Business Name</label>
-            <input type="text" name="organization" title="Enter your business name" autocomplete="organization" required>
-
-            <label for="membership">Membership Level
-                <select name="membership" title="Select your membership level" required>
-                    <option value="">Select a membership</option>
-                    <option value="np">NP Membership</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
-            </label>
-            <label for="description">Business Description
-                <textarea name="description" title="Describe your business" rows="5"></textarea>
-            </label>
-
-            <input type="hidden" name="timestamp" id="timestamp">
-            <input type="submit" value="Submit">
+        <dialog id="npmodal">
+            <button class="close-button" aria-label="close">✕</button>
+            <h2>Non Profit Membership</h2>
+            <p>Benefits include:</p>
+            <ul>
+                <li>You'll get a nice plaque with the mayor's stamp on it</li>
+                <li>You get to ride on a float Saint Patty's Day</li>
+            </ul>
+            <p>COST: Free</p>
+        </dialog>
+        <dialog id="bronzemodal">
+            <button class="close-button" aria-label="close">✕</button>
+            <h2>Bronze Membership</h2>
+            <p>Benefits include:</p>
+            <ul>
+                <li>You'll get a bronze plaque with your business name on it.</li>
+                <li>You'll receive a free ticket to the city's annual business fair.</li>
+            </ul>
+            <p>COST: $20</p>
+        </dialog>
+        <dialog id="silvermodal">
+            <button class="close-button" aria-label="close">✕</button>
+            <h2>Silver Membership</h2>
+            <p>Benefits include:</p>
+            <ul>
+                <li>You'll get a shiny silver plaque with the mayor's stamp on it.</li>
+                <li>You get to attend a private dinner with important business leaders.</li>
+                <li>You'll have your business featured in the city's annual magazine.</li>
+            </ul>
+            <p>COST: $35</p>
+        </dialog>
+        <dialog id="goldmodal">
+            <button class="close-button" aria-label="close">✕</button>
+            <h2>Gold Membership</h2>
+            <p>Benefits include:</p>
+            <ul>
+                <li>You'll get a golden plaque signed by the mayor.</li>
+                <li>You get to sit in the VIP section during the city's annual parade.</li>
+                <li>You'll be invited to an exclusive dinner with the mayor.</li>
+            </ul>
+            <p>COST: $50</p>
+        </dialog>
     </main>
     <footer>
         <div class="footer-contact">

@@ -466,3 +466,172 @@ main {
   font-size: 0.7rem;
   text-align: left;
 }
+
+.join-page {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.join-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.join-page label {
+  display: block;
+  font-weight: bold;
+  color: #3D405B;
+}
+
+.join-page input:not([type="hidden"]), .join-page select, .join-page textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.join-page input[type="submit"] {
+  background-color: #3D405B;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.join-page input[type="submit"]:hover {
+  background-color: #60648a;
+}
+
+.application-form h2, .membership-levels h2 {
+  color: #3D405B;
+  font-weight: bold;
+  margin-top: 0 0 15px;
+}
+
+.np-membership-card, .bz-membership-card, .sv-membership-card, .gd-membership-card {
+  padding: 20px;
+  border: #000 solid;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  text-align: center;
+  animation: fadeIn 1s ease-in both;
+}
+
+.np-membership-card {
+  background-color: #f3f3f3;
+  color: #3D405B;
+}
+
+.bz-membership-card {
+  background-color: #976434;
+  color: #fff;
+}
+
+.sv-membership-card {
+  background-color: #cecece;
+  color: #000;
+}
+
+.gd-membership-card {
+  background-color: #d1ba37;
+  color: #000;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.membership-modal {
+  display: inline-block;
+  background-color: #3D405B;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.membership-modal:hover { 
+  background-color: #60648a;
+}
+
+.join-page dialog {
+  position: fixed;
+  margin: auto;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #3D405B;
+}
+
+.join-page dialog p {
+  font-weight: bold;
+}
+
+.join-page dialog::backdrop {
+  background-color: rgba(0, 0, 0, .5);
+}
+
+.join-page .close-button {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #3D405B;
+  background-color: #eee;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.join-page .close-button:hover {
+  background-color: #f8f8f8;
+}
+
+#results {
+  color: #3D405B;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #f8fdd3;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.tytext {
+  text-align: center;
+  color: #3D405B;
+  line-height: 1.5;
+}
+
+.back {
+  text-align: center;
+  background-color: #3D405B;
+  color: #fff;
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+}
+
+.back:hover {
+  text-align: center;
+  background-color: #60648a;
+}

@@ -123,4 +123,14 @@
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
+    .join-page {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+        gap: 40px;
+    }
+
+    .join-page h1 {
+        grid-column: 1 / -1;
+    }
+
 }
