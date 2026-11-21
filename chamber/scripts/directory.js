@@ -49,7 +49,13 @@ const displayBusiness = (business) => {
         phone.classList.add("business-phone");
         website.classList.add("business-website");
         membership.classList.add("membership");
-        membership.classList.add(`membership-${business.membership}`)
+        if (business.membership == 1) {
+            membership.classList.add("membership-1");
+        } else if (business.membership == 2) {
+           membership.classList.add("membership-2"); 
+        } else if (business.membership == 3) {
+           membership.classList.add("membership-3"); 
+        }
 
         name.textContent = business.name;
         tagline.textContent = business.tagline;
